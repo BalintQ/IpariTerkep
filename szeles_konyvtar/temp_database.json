@@ -1,0 +1,78 @@
+{
+    "szelesfolyoso1": {
+        "title": "Széles folyosó",
+        "image": "images/szelesfolyoso1.png",
+        "points": [
+            { "name": "Tovább", "x": 50, "y": 50, "target": "szelesfolyoso2" }
+        ],
+        "info": "F117, F118"
+    },
+    "szelesfolyoso2": {
+        "title": "Széles folyosó",
+        "image": "images/szelesfolyoso2.png",
+        "points": [
+            { "name": "Tovább", "x": 50, "y": 50, "target": "szelesfolyoso3" },
+            { "name": "Kijárat", "x": 50, "y": 50, "target": "*external_link*" }
+        ],
+        "info": "F114, F115, F116, Kijárat"
+    },
+    "szelesfolyoso3": {
+        "title": "Széles folyosó",
+        "image": "images/szelesfolyoso3.png",
+        "points": [
+            { "name": "Matek lépcső", "x": 50, "y": 50, "target": "mateklepcso_alul" }
+        ],
+        "info": "Tesiterem, F112, F113"
+    },
+
+    "mateklepcso_alul": {
+        "title": "Matek lépcső alul",
+        "image": "images/mateklepcso_alul.png",
+        "points": [
+            { "name": "Széles folyosó", "x": 50, "y": 50, "target": "szelesfolyoso2" },
+            { "name": "Matek lépcső teteje", "x": 50, "y": 50, "target": "mateklepcso_felul" }
+        ],
+        "info": "TODO"
+    },
+    "mateklepcso_felul": {
+        "title": "Matek lépcső felül",
+        "image": "images/mateklepcso_felul.png",
+        "points": [
+            { "name": "Könyvtár mögött", "x": 50, "y": 50, "target": "konyvtar_mogott" }
+        ],
+        "info": "F201"
+    },
+    "lengo_folyoso": {
+        "title": "Lengő folyosó",
+        "image": "images/lengofolyoso.png",
+        "points": [
+            { "name": "Konyvtár előtti folyosó", "x": 50, "y": 50, "target": "konyvtar_elott" }
+        ],
+        "info": "TODO"
+    },
+
+    "konyvtar_folyoso": {
+        "title": "F2xx + könyvtár folyosó",
+        "image": "images/konyvtar_folyoso.png",
+        "points": [
+            { "name": "Könyvtár előtér", "x": 50, "y": 50, "target": "konyvtar_elott" }
+        ],
+        "info": "TODO"
+    },
+    "konyvtar_elott": {
+        "title": "Könyvtár élőtér",
+        "image": "images/konyvtar_elott.png",
+        "points": [
+            { "name": "Könyvtár", "x": 50, "y": 50, "target": "konyvtar" }
+        ],
+        "info": "TODO"
+    },
+    "konyvtar_mogott": {
+        "title": "Könyvtár mögött",
+        "image": "images/konyvtar_mogott.png",
+        "points": [
+            { "name": "Matek lépcső alja", "x": 50, "y": 50, "target": "mateklepcso_alul" }
+        ],
+        "info": "TODO"
+    }
+}
