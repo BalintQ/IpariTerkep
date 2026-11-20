@@ -1,61 +1,130 @@
 const Iszarny = {
     start: {
         title: 'Iszárny kezdete',
-        image: 'images/demokep.png',
+        image: '../pictures/large/corridor/I_szarny/_MG_9755.jpg',
         points: [
-            { name: 'Lépcsőfordulóalja', x: 50, y: 55, target: 'lépcsőteteje' },
+            { name: 'Lépcső', x: 50, y: 55, target: 'lepcső' },
+        ]
+    },
+
+     lepcső: {
+        title: 'Iszárny lépcső',
+        image: '../pictures/large/corridor/I_szarny/_MG_9753.jpg',
+        points: [
+            { name: 'I lépcső', x: 50, y: 55, target: 'start' },
+            { name: 'Lépcsőteteje', x: 50, y: 70, target: 'lépcsőteteje' }
         ]
     },
 
     lépcsőteteje:{
         title: 'Lépcsőforduló',
-        image: 'images/demokep.png',
+        image: '../pictures/large/corridor/I_szarny/_MG_9754.JPG',
         points: [
-            { name: 'Belsőudvar', x: 10, y: 55, target: 'belsőudvar' },
-            { name: 'Parkoló', x: 30, y: 55, target: 'parkoló' },
-            { name: 'Első emelet', x: 40, y: 20, target: 'I102' },
-            { name: 'Vissza a szűk folyosóra!', x: 24, y: 55, target: 'start' },
+            { name: 'Belsőudvar', x: 30, y: 50, target: 'belsoudvar' },
+            { name: 'Parkoló', x: 40, y: 50, target: 'parkolo' },
+            { name: 'Első emelet', x: 55, y: 50, target: 'firstfloor' },
+            { name: 'Vissza a lépcsőre!', x: 50, y: 85, target: 'lepcső' },
         ]
     },
 
-    I102:{
+    parkolo:{
+        title: 'Tanári Parkoló',
+        image: '../pictures/large/corridor/I_szarny/_MG_9752.JPG',
+        points: [
+            { name: 'Belsőudvar', x: 30, y: 50, target: '' },
+            { name: 'Vissza', x: 40, y: 50, target: 'lépcsőteteje' },
+        ]
+    },
+
+    belsoudvar:{
+        title: 'Tanári Parkoló',
+        image: '../pictures/large/corridor/I_szarny/_MG_9751.JPG',
+        points: [
+            { name: 'Belsőudvar', x: 30, y: 50, target: '' },
+            { name: 'Vissza', x: 40, y: 50, target: 'lépcsőteteje' },
+        ]
+    },
+
+    firstfloor:{
         title: 'I102',
-        image: 'images/demokep.png',
+        image: '../pictures/large/corridor/I_szarny/_MG_9749.jpg',
         points: [
-            { name: 'Második emelet', x: 32, y: 55, target: 'secondfloor' },
-            { name: 'Vissza a földszintre', x: 6, y: 55, target: 'lépcsőteteje' },
+            { name: 'Második emelet', x: 60, y: 45, target: 'secondfloor1' },
+            { name: 'Vissza a földszintre', x: 33, y: 60, target: 'lépcsőteteje' },
 
         ]
     },
 
-    secondfloor:{
+      secondfloor1:{
         title: 'Secondfloor',
-        image: 'images/demokep.png',
+        image: '../pictures/large/corridor/I_szarny/_MG_9745.jpg',
         points: [
-            { name: 'Termek', x: 22, y: 55, target: 'termek' },
-            { name: 'Tanari', x: 25, y: 55, target: 'tanari' },
-            { name: 'Vissza az első emeletre tetejére!', x: 50, y: 55, target: 'I102' },
+            { name: 'Termek', x: 22, y: 55, target: 'I204' },
+            { name: 'Tanari', x: 25, y: 60, target: 'tanari' },
+            { name: 'Vissza', x: 50, y: 65, target: 'firstfloor' },
 
         ]
     },
 
-    termek:{
-        title: 'Termek',
-        image: 'images/demokep.png',
+      tanari:{
+        title: 'Secondfloor2',
+        image: '../pictures/large/corridor/I_szarny/_MG_9746.jpg',
         points: [
-            { name: 'I204', x: 66, y: 55, target: 'I204' },
-            { name: 'I203', x: 67, y: 55, target: 'I203' },
-            { name: 'I202', x: 98, y: 55, target: 'I202' },
-            { name: 'Vissza a lépcső tetejére!', x: 50, y: 55, target: 'secondfloor' }
+            { name: 'Termek', x: 22, y: 55, target: 'I204' },
+            { name: 'Vissza', x: 50, y: 55, target: 'secondfloor1' },
+
+        ]
+    },
+
+    I204:{
+        title: 'Termek',
+        image: '../pictures/large/corridor/I_szarny/_MG_9744.jpg',
+        points: [
+            { name: 'I204', x: 35, y: 55, target: 'I204' },
+            { name: 'További termek', x: 53, y: 60.5, target: 'I203' },
+            { name: 'Vissza a lépcső tetejére!', x: 50, y: 70, target: 'secondfloor2' }
+
+        ]
+    },
+
+
+       I203:{
+        title: 'Termek',
+        image: '../pictures/large/corridor/I_szarny/_MG_9743.jpg',
+        points: [
+            { name: 'I204', x: 35, y: 55, target: 'I204' },
+            { name: 'I203', x: 45, y: 48, target: 'I203' },
+            { name: 'I202', x: 53, y: 60.5, target: 'I202' },
+            { name: 'Vissza', x: 50, y: 70, target: 'I204' }
+
+        ]
+    },
+
+       I202:{
+        title: 'Termek',
+        image: '../pictures/large/corridor/I_szarny/_MG_9739.jpg',
+        points: [
+            { name: 'folyosó', x: 35, y: 55, target: 'folyoso' },
+            { name: 'I202', x: 53, y: 60.5, target: 'I202' },
+            { name: 'Vissza', x: 50, y: 70, target: 'secondfloor2' }
+
+        ]
+    },
+
+       folyoso:{
+        title: 'Termek',
+        image: '../pictures/large/corridor/I_szarny/_MG_9740.jpg',
+        points: [
+            { name: 'folyosó', x: 35, y: 55, target: 'secondfloor2' },
 
         ]
     },
     
     tanari:{
         title: 'Info Tanari',
-        image: 'images/demokep.png',
+        image: '../pictures/large/corridor/I_szarny/_MG_9746.jpg',
         points: [
-            { name: 'Vissza a lépcső tetejére!', x: 10, y: 55, target: 'secondfloor' },
+            { name: 'Vissza a lépcső tetejére!', x: 10, y: 55, target: 'secondfloor2' },
 
         ]
     }
