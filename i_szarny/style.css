@@ -112,6 +112,56 @@ html {
     display: block;
 }
 
+
+.map {
+    position: relative;
+    width: 100%;
+}
+
+#photo {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+#points {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.point {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 2;
+}
+
+.point:hover {
+    background-color: #1d4ed8;
+}
+
+.label {
+    position: absolute;
+    transform: translate(-50%, -150%);
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 1;
+}
+
 /* Mobilnézet */
 @media (max-width: 768px) {
     .map {
