@@ -1,4 +1,4 @@
-const current_img = document.getElementById("current_img");
+const byID = (id) => document.getElementById(id)
 
 const requestData = async () => {
     try {
