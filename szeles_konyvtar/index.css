@@ -3,3 +3,36 @@
     box-sizing: border-box;
     margin: 0; padding: 0;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#image {
+    position: relative;
+    aspect-ratio: 3/2;
+    background-image: url("https://placehold.co/600x400");
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex-grow: 1;
+    max-width: 95%;
+    max-height: 100%;
+    margin: 2.5% 0;
+}
+
+button {
+    position: absolute;
+    border: 2px solid red;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+button:hover:not(:active) {
+    background-color: yellow;
+}
