@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@500;600&display=swap">
     <!-- 2) Ez a közös stílus, ne módosítsd, és ne töröld -->
     <link rel="stylesheet" href="ipari-kozos.css">
-    <!-- 3) Ide jöhet a saját oldal CSS-ed (opcionális) -->
-    <!-- <link rel="stylesheet" href="sajat-oldal.css"> -->
+    <link rel="stylesheet" href="./mirelit.css">
+    <script src="./mirelit.js" defer></script>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
         <div class="logo">
             <img src="ipari_logo.svg" alt="Ipari logó">
         </div>
-        <h1>Ipari MAP</h1>
+        <h1>Mirelit - Szűkfolyosó</h1>
         <a class="back" href="./Ipari MAP demo.html"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M10 3L5 8l5 5" />
@@ -29,7 +29,17 @@
 
     <!-- ======== ITT VAN AZ OLDAL SAJÁT TARTALMA ======== -->
     <main>
-        <!-- ide dolgozz -->
+        
+        <div class="kep-tarto">
+        <img id="kep" src="kepek/kep1.jpg" alt="Megjelenített kép">
+    </div>
+
+    <div class="gombok">
+        <button onclick="vissza()">Vissza</button>
+        <button onclick="tovabb()">Tovább</button>
+    </div>
+        
+        
     </main>
 
     <!-- ======== FOOTER (másold változtatás nélkül) ======== -->
