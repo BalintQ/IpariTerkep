@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><XnView_script version="1.0" name="med">
     <Resize mode="5" width="2560" height="600" unit="0" ratio="true" orientation="false" enlarge="0" resample="7" gamma_correct="false"/>
     <Output folder="C:/Munka/23c-nagy/IpariTerkep/pictures/medium" filename="{Filename}" case="0" startIndex="1" format="">
-        <Options overwrite="1" orgDate="false" keepMeta="true" keepICC="false" keepFolder="true" checkFilesize="false" keepParentFolder="false" keepExtension="false" delOrg="false" multipage="false" allPages="false" openExplorer="false" beep="true" openBrowser="false" clearItems="false"/>
+        <Options overwrite="1" orgDate="false" keepMeta="true" keepICC="false" keepFolder="true" checkFilesize="false" keepParentFolder="true" keepExtension="false" delOrg="false" multipage="false" allPages="false" openExplorer="false" beep="true" openBrowser="false" clearItems="false"/>
         <JPEG useJPEGli="false" quality="85" progressive="false" optimizeHuffman="true" rebuildThumb="true" orgQuality="false" DCTMethod="2" subSampling="2" smoothFactor="0"/>
         <TGA compress="false" bottomUp="false"/>
         <TIFF compress="3" quality="80" compressBW="6" oneStrip="false"/>
