@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Ipari MAP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@500;600&display=swap">
+    <!-- 2) Ez a közös stílus, ne módosítsd, és ne töröld -->
+    <link rel="stylesheet" href="ipari-kozos.css">
+    <!-- 3) Ide jöhet a saját oldal CSS-ed (opcionális) -->
+    <link rel="stylesheet" href="./gepesz.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- ======== HEADER (másold változtatás nélkül, csak a h1 szövegét írd át) ======== -->
+    <header>
+        <div class="logo">
+            <img src="ipari_logo.svg" alt="Ipari logó">
+        </div>
+        <h1>Ipari MAP</h1>
+        <a class="back" href="./Ipari MAP demo.html"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M10 3L5 8l5 5" />
+            </svg>Vissza a főoldalra</a>
+    </header>
+    <!-- ======== HEADER VÉGE ======== -->
+
+    <!-- ======== ITT VAN AZ OLDAL SAJÁT TARTALMA ======== -->
+    <main>
+<body class="bg-light">
+
+    <!-- 1. NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Ipari Map</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#folyosoMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="folyosoMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Gépész folyosó</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Vegyész folyosó</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Infós folyosó</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 2. FŐ TARTALOM (Térkép + Szélső infók) -->
+    <div class="container my-4">
+      <div class="row g-4 align-items-start">
+        
+        <!-- BAL OLDAL / KÖZÉP: Nagy térképkép (8 oszlop széles) -->
+        <div class="col-12 col-lg-8">
+          <div class="card shadow-sm">
+            <div class="card-body p-2 text-center">
+              <!-- Ide jön a gépész folyosó alaprajza/képe -->
+              <img src="./mintaképek/gigaaaa.jpg" id="terkep-kep" class="img-fluid rounded" alt="Gépész folyosó térkép">
+            </div>
+          </div>
+        </div>
+
+        <!-- JOBB SZÉL: Infó doboz (4 oszlop széles) -->
+        <div class="col-12 col-lg-4">
+          <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white fw-bold">
+              Helyszín információk
+            </div>
+            <div class="card-body">
+              <h5 class="card-title" id="terem-nev">Gépész folyosó</h5>
+              <p class="card-text text-muted" id="terem-leiras">
+                Kattints egy teremre vagy pontra a térképen a részletekért!
+              </p>
+              <hr>
+              <ul class="list-group list-group-flush" id="terem-adatok">
+                <li class="list-group-item px-0"><strong>Szint:</strong> Földszint / 1. emelet</li>
+                <li class="list-group-item px-0"><strong>Termek:</strong> F002 - F024, Tanári</li>
+                <li class="list-group-item px-0"><strong>Megközelítés:</strong> Főbejárattól balra</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS (a mobilos menügombhoz kell) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </main>
+
+    <!-- ======== FOOTER (másold változtatás nélkül) ======== -->
+    <footer>
+        <p>&copy; 2026 • Veszprémi Szakképzési Centrum Ipari Technikum</p>
+    </footer>
+    <!-- ======== FOOTER VÉGE ======== -->
+</body>
+
+</html>
