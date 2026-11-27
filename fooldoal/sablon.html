@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Ipari MAP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@500;600&display=swap">
+    <!-- 2) Ez a közös stílus, ne módosítsd, és ne töröld -->
+    <link rel="stylesheet" href="ipari-kozos.css">
+    <link rel="stylesheet" href="fooldal.css">
+    <script src="fooldal.js" defer></script>
+</head>
+
+<body>
+    <!-- ======== HEADER (másold változtatás nélkül, csak a h1 szövegét írd át) ======== -->
+    <header>
+        <div class="logo">
+            <img src="ipari_logo.svg" alt="Ipari logó">
+        </div>
+        <h1>Ipari MAP</h1>
+
+    </header>
+    <!-- ======== HEADER VÉGE ======== -->
+
+    <!-- ======== ITT VAN AZ OLDAL SAJÁT TARTALMA ======== -->
+    <main>
+        <div class="frame">
+            <img src="fooldal_map.png" alt="Iskolai térkép">
+            <button class="pin" style="left: 40%; top: 12%;" onclick="pinKattintas('laborbejarat')">
+                <span>L szárny bejárat</span>
+            </button>
+
+            <button class="pin" style="left: 64%; top: 12%;" onclick="pinKattintas('laborfolyoso')">
+                <span>Labor folyosó bejárat</span>
+            </button>
+
+            <button class="pin" style="left: 43%; top: 55%;" onclick="pinKattintas('fobejarat')">
+                <span>Főbejárat</span>
+            </button>
+
+            <button class="pin" style="left: 83%; top: 10%;" onclick="pinKattintas('h bejarat')">
+                <span>H szárny bejárat</span>
+            </button>
+
+            <button class="pin" style="left: 64%; top: 36%;" onclick="pinKattintas('i bejarat')">
+                <span>I szárny bejárat</span>
+            </button>
+
+            <button class="pin" style="left: 38%; top: 40%;" onclick="pinKattintas('szeles bejarat')">
+                <span>Széles folyosó bejárat</span>
+            </button>
+
+            <button class="pin" style="left: 28%; top: 56%;" onclick="pinKattintas('Gépész folyoso bejarat')">
+                <span>Gépész folyosó bejárat</span>
+            </button>
+        </div>
+    </main>
+
+    <!-- ======== FOOTER (másold változtatás nélkül) ======== -->
+    <footer>
+        <p>&copy; 2026 • Veszprémi Szakképzési Centrum Ipari Technikum</p>
+    </footer>
+    <!-- ======== FOOTER VÉGE ======== -->
+</body>
+
+</html>
