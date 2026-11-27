@@ -13,7 +13,7 @@
         "image": "../pictures/large/corridor/I_szarny/_MG_9753.jpg",
         "points": [
             { "name": "I lépcső", "x": 50, "y": 55, "target": "start" },
-            { "name": "Lépcsőteteje", "x": 50, "y": 70, "target": "lépcsőteteje" }
+            { "name": "Lépcsőteteje", "x": 50, "y": 85, "target": "lépcsőteteje" }
         ],
         "info" : "lorem ipsum"
     },
@@ -64,7 +64,7 @@
         "title": "Secondfloor",
         "image": "../pictures/large/corridor/I_szarny/_MG_9745.jpg",
         "points": [
-            { "name": "Termek", "x": 50, "y": 80, "target": "I204" },
+            { "name": "Termek", "x": 50, "y": 85, "target": "I204" },
             { "name": "Tanari", "x": 70, "y": 50, "target": "tanari" },
             { "name": "Vissza", "x": 45, "y": 50, "target": "firstfloor" }
 
@@ -87,9 +87,9 @@
         "title": "Termek",
         "image": "../pictures/large/corridor/I_szarny/_MG_9744.jpg",
         "points": [
-            { "name": "I204", "x": 35, "y": 55, "target": "I204" },
+            { "name": "I204", "x": 30, "y": 45, "target": "I204" },
             { "name": "További termek", "x": 50, "y": 60.5, "target": "I203" },
-            { "name": "Vissza a lépcső tetejére!", "x": 50, "y": 80, "target": "secondfloor1" }
+            { "name": "Vissza a lépcső tetejére!", "x": 50, "y": 85, "target": "secondfloor1" }
 
         ],
         "info" : "lorem ipsum"
@@ -98,12 +98,11 @@
 
        "I203":{
         "title": "Termek",
-        "image": "../pictures/large/corridor/I_szarny/_MG_9743.jpg",
+        "image": "../pictures/large/corridor/I_szarny/_MG_9742.jpg",
         "points": [
-            { "name": "I204", "x": 35, "y": 55, "target": "I204" },
-            { "name": "I203", "x": 45, "y": 48, "target": "I203" },
-            { "name": "I202", "x": 53, "y": 60.5, "target": "I202" },
-            { "name": "Vissza", "x": 50, "y": 70, "target": "I204" }
+            { "name": "I203", "x": 30, "y": 48, "target": "I203" },
+            { "name": "I202", "x": 43, "y": 45, "target": "I202" },
+            { "name": "Vissza", "x": 50, "y": 85, "target": "I204" }
 
         ],
         "info" : "lorem ipsum"
@@ -113,19 +112,8 @@
         "title": "Termek",
         "image": "../pictures/large/corridor/I_szarny/_MG_9739.jpg",
         "points": [
-            { "name": "folyosó", "x": 35, "y": 55, "target": "folyoso" },
-            { "name": "I202", "x": 53, "y": 60.5, "target": "I202" },
-            { "name": "Vissza", "x": 50, "y": 70, "target": "secondfloor2" }
-
-        ],
-        "info" : "lorem ipsum"
-    },
-
-       "folyoso":{
-        "title": "Termek",
-        "image": "../pictures/large/corridor/I_szarny/_MG_9740.jpg",
-        "points": [
-            { "name": "folyosó", "x": 35, "y": 55, "target": "secondfloor2" }
+            { "name": "I202", "x": 30, "y": 45, "target": "I202" },
+            { "name": "Vissza", "x": 50, "y": 85, "target": "I203" }
 
         ],
         "info" : "lorem ipsum"
