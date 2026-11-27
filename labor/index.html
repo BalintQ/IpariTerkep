@@ -28,9 +28,40 @@
     </header>
     <main>
 
+        <div class="terkep">
+
+        </div>
+
     </main>
     <footer>
         <p>&copy; 2026 • Veszprémi Szakképzési Centrum Ipari Technikum</p>
     </footer>
+
+    <script>
+        let Labor;
+        const getLabor = async () => {
+            try {
+                let response = await fetch("./labor.json");
+                if (response.ok) {
+                    Labor = await response.json();
+                    console.log(Labor);
+                    Altalanos("masodikVege");
+                }
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+        const Altalanos = (helyzet) => {
+            let terkep = document.getElementById("terkep");
+            
+            helyszin = Labor[helyzet];
+            console.log(helyszin);
+            //terkep.innerHTML = `<img src="${helyszin.image}"></img>`;
+        }
+
+        getLabor();
+    </script>
+
 </body>
 </html>

@@ -1,0 +1,115 @@
+{
+  "labor_1A" : {
+    "title": "Labor_2emelet_vege",
+    "image": "../pictures/large/corridor/Labor/_MG_9789.JPG",
+    "points": [
+      { "name": "Tovább a labor szárnyon", "x": 30, "y": 42, "target": "labor_1B" }
+    ],
+    "info" : "Nyíló tantermek: Nincs terem; Továbbhaladási irány: labor második emelet"
+  },
+
+  "labor_1B" : {
+    "title": "Labor",
+    "image": "../pictures/large/corridor/Labor/_MG_9790.JPG",
+    "points": [
+      { "name": "Labor vége", "x": 30, "y": 42, "target": "labor_1A" }
+    ],
+    "info" : "Nyíló tantermek: L 103; Továbbhaladási irány: Vissza"
+  },
+
+  "labor_2A" : {
+    "title": "Labor",
+    "image": "../pictures/large/corridor/Labor/_MG_9791.JPG",
+    "points": [
+      { "name": "Labor", "x": 30, "y": 42, "target": "labor_2B" }
+    ],
+    "info" : "Nyíló tantermek: L 105; Továbbhaladási irány: labor második emelet"
+  },
+
+  "labor_2B" : {
+    "title": "Labor",
+    "image": "../pictures/large/corridor/Labor/_MG_9792.JPG",
+    "points": [
+      { "name": "Labor", "x": 30, "y": 42, "target": "labor_3A" },
+      { "name": "Vissza", "x": 30, "y": 42, "target": "labor_2A" }
+    ],
+    "info" : "Nyíló tantermek: L 106; Továbbhaladási irány: labor második emelet"
+  },
+
+  "labor_3A" : {
+    "title": "Labor",
+    "image": "../pictures/large/corridor/Labor/_MG_9793.JPG",
+    "points": [
+      { "name": "Labor", "x": 30, "y": 42, "target": "labor_3B" }
+    ],
+    "info" : "Nyíló tantermek: L 107; Továbbhaladási irány: labor második emelet"
+  },
+
+  "labor_3B" : {
+    "title": "Labor",
+    "image": "../pictures/large/corridor/Labor/_MG_9794.JPG",
+    "points": [
+      { "name": "Labor", "x": 30, "y": 42, "target": "labor_4A" },
+      { "name": "Vissza", "x": 30, "y": 42, "target": "labor_3A" }
+    ],
+    "info" : "Nyíló tantermek: L 108; Továbbhaladási irány: labor második emelet"
+  },
+
+  "labor_4A" : {
+    "title": "Labor",
+    "image": "../pictures/large/corridor/Labor/_MG_9795.JPG",
+    "points": [
+      { "name": "Labor", "x": 30, "y": 42, "target": "labor_4B" }
+    ],
+    "info" : "Nyíló tantermek: L 109; Továbbhaladási irány: labor második emelet"
+  },
+
+  "labor_4B" : {
+    "title": "Labor",
+    "image": "../pictures/large/corridor/Labor/_MG_9796.JPG",
+    "points": [
+      { "name": "Labor", "x": 30, "y": 42, "target": "labor_4A" },
+      { "name": "Vissza", "x": 30, "y": 42, "target": "labor_5A" }
+    ],
+    "info" : "Nyíló tantermek: L 109; Továbbhaladási irány: labor második emelet"
+  },
+
+  "labor_5A" : {
+    "title": "Labor",
+    "image": "../pictures/large/corridor/Labor/_MG_9797.JPG",
+    "points": [
+      { "name": "Labor", "x": 30, "y": 42, "target": "labor_5B" }
+    ],
+    "info" : "Nyíló tantermek: L 110; Továbbhaladási irány: labor második emelet"
+  },
+
+  "labor_5B" : {
+    "title": "Labor",
+    "image": "../pictures/large/corridor/Labor/_MG_9798.JPG",
+    "points": [
+      { "name": "Labor", "x": 30, "y": 42, "target": "labor_5A" },
+      { "name": "Vissza", "x": 30, "y": 42, "target": "labor_6A" }
+    ],
+    "info" : "Nyíló tantermek: L 110; Továbbhaladási irány: labor második emelet"
+  },
+
+  "labor_6A" : {
+    "title": "Labor",
+    "image": "../pictures/large/corridor/Labor/_MG_9800.JPG",
+    "points": [
+      { "name": "Labor", "x": 30, "y": 42, "target": "labor_5B" }
+    ],
+    "info" : "Nyíló tantermek: Nincs; Továbbhaladási irány: lépcsőn lefele"
+  },
+
+  "labor_6B" : {
+    "title": "Labor",
+    "image": "../pictures/large/corridor/Labor/_MG_9801.JPG",
+    "points": [
+      { "name": "Labor", "x": 30, "y": 42, "target": "labor_6A" },
+      { "name": "Vissza", "x": 30, "y": 42, "target": "labor_7A" }
+    ],
+    "info" : "Nyíló tantermek: L 110; Továbbhaladási irány: kijárat"
+  }
+
+}
