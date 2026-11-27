@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Ipari MAP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@500;600&display=swap">
+    <!-- 2) Ez a közös stílus, ne módosítsd, és ne töröld -->
+    <link rel="stylesheet" href="../alap/ipari-kozos.css">
+    <!-- 3) Ide jöhet a saját oldal CSS-ed (opcionális) -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="sajat-oldal.css"> -->
+    <script defer src="./script.js"></script>  
+</head>
+
+<body>
+    <!-- ======== HEADER (másold változtatás nélkül, csak a h1 szövegét írd át) ======== -->
+    <header>
+        <div class="logo">
+            <img src="../alap/ipari_logo.svg" alt="Ipari logó">
+        </div>
+        <h1>Ipari MAP</h1>
+        <a class="back" href="./Ipari MAP demo.html"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M10 3L5 8l5 5" />
+            </svg>Vissza a főoldalra</a>
+    </header>
+    <!-- ======== HEADER VÉGE ======== -->
+
+    <!-- ======== ITT VAN AZ OLDAL SAJÁT TARTALMA ======== -->
+    <main>
+        <!-- ide dolgozz -->
+        <div class="breadcrumb" id="breadcrumb"></div>
+
+        <div class="map">
+            <img id="photo" alt="Interaktív iskolai kép">
+            <div id="points"></div>
+            <button id="infoBtn" class="info-btn">i</button>
+        </div>
+
+        <div id="infoModal" class="info-modal">
+            <button id="closeInfo" class="info-close">&times;</button>
+
+            <h2 id="modalTitle"></h2>
+
+            <div id="modalContent"></div>
+        </div>
+    </main>
+
+    <!-- ======== FOOTER (másold változtatás nélkül) ======== -->
+    <footer>
+        <p>&copy; 2026 • Veszprémi Szakképzési Centrum Ipari Technikum</p>
+    </footer>
+    <!-- ======== FOOTER VÉGE ======== -->
+</body>
+
+</html>
