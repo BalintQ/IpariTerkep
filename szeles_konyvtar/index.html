@@ -1,17 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IpariMap</title>
-    <link rel="stylesheet" href="./index.css">
-    <script src="./index.js" defer></script>
-</head>
-<body>
-    <nav><!-- Navbar --></nav>
-    <main>
-        <img src="" alt="IpariMap" id="current_img">
+<html lang="hu">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Ipari MAP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@500;600&display=swap">
+    <link rel="stylesheet" href="/alap/ipari-kozos.css">
+    <link rel="stylesheet" href="/szeles_konyvtar/index.css">
+    <script src="/szeles_konyvtar/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/alap/ipari_logo.svg" alt="Ipari logó">
+        </div>
+        <h1>Ipari MAP</h1>
+        <a class="back" href="/"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M10 3L5 8l5 5" />
+            </svg>Vissza a főoldalra</a>
+    </header>
+    <main id="main">
+        <div id="image">
+            <button style="top: 5%; left: 10%;">1</button>
+            <button style="top: 10%; left: 10%;">2</button>
+            <button style="top: 5%; left: 5%;">3</button>
+            <button style="top: 10%; left: 5%;">4</button>
+            <button style="top: 50%; left: 10%;">5</button>
+        </div>
     </main>
+    <footer id="footer">
+        <p>&copy; 2026 • Veszprémi Szakképzési Centrum Ipari Technikum</p>
+    </footer>
 </body>
 </html>
