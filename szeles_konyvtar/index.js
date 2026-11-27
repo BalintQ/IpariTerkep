@@ -1,7 +1,13 @@
 const byID = (id) => document.getElementById(id)
 
-const image = byID("image");
-const footer = byID("footer");
-const main = byID("main")
-
-main.style.marginBottom = getComputedStyle(footer).height;
+const requestData = async () => {
+    try {
+        let response = await fetch('./temp_database.json');
+        if (response.ok) {
+            let libraryHallwayData = response.json();
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+requestData();
