@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IpariMAP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@500;600&display=swap">
+    <link rel="stylesheet" href="ipari-kozos.css">
+    <style>
+        body {
+            background-image: url(../sajatimg/hatter.jpg);
+            background-repeat: repeat;
+        
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="ipari_logo.svg" alt="Ipari logó">
+        </div>
+        <h1>Ipari MAP</h1>
+        <a class="back" href="./Ipari MAP demo.html"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M10 3L5 8l5 5" />
+            </svg>Vissza a főoldalra</a>
+    </header>
+    <main>
+
+        <div class="terkep">
+
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 • Veszprémi Szakképzési Centrum Ipari Technikum</p>
+    </footer>
+
+    <script>
+        let Labor;
+        const getLabor = async () => {
+            try {
+                let response = await fetch("./labor.json");
+                if (response.ok) {
+                    Labor = await response.json();
+                    console.log(Labor);
+                    Altalanos("masodikVege");
+                }
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+        const Altalanos = (helyzet) => {
+            let terkep = document.getElementById("terkep");
+            
+            helyszin = Labor[helyzet];
+            console.log(helyszin);
+            //terkep.innerHTML = `<img src="${helyszin.image}"></img>`;
+        }
+
+        getLabor();
+    </script>
+
+</body>
+</html>

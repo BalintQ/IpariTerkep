@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat, Arial, sans-serif;
+    color: #182235;
+    margin: 0;
+    background: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #000;
+    padding: 14px 0;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navbar-brand span {
+    color: #e83b3b;
+}
+
+.nav-link {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #e83b3b;
+}
+
+.container-fluid {
+    background-color: #000;
+}
+
+.nav-item {
+    color: #fff;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    background-color: #000;
+}
+
+.dropdown-item {
+    color: #fff;
+}
+
+.dropdown-item:hover {
+    background-color: #e83b3b;
+    color: #fff;
+}
+
+/* Kereső */
+.form-control {
+    border-radius: 5px;
+}
+
+.btn-outline-success {
+    color: #e83b3b;
+    border-color: #e83b3b;
+}
+
+.btn-outline-success:hover {
+    background-color: #e83b3b;
+    color: #fff;
+}
+
+
+.navbar-toggler {
+    border-color: #fff;
+}
+
+.info-btn {
+    top: 15px;
+    right: 15px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: #e83b3b;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.info-modal {
+    display: none;
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    width: 420px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .25);
+    z-index: 1000;
+}
+
+.info-modal.show {
+    display: block;
+}
+
+
+.map {
+    position: relative;
+    width: 100%;
+}
+
+#photo {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+#points {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.point {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 2;
+}
+
+.point:hover {
+    background-color: #1d4ed8;
+}
+
+.label {
+    position: absolute;
+    transform: translate(-50%, -150%);
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Mobilnézet */
+@media (max-width: 768px) {
+    .map {
+        width: 96%;
+        margin: 20px auto;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+}
