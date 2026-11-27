@@ -210,46 +210,58 @@
     transform: translate(-50%, -50%);
     width: 35px;
     height: 35px;
-    border-radius: 50% 50% 50% 0;
-    transform: translate(-50%, -50%) rotate(-45deg);
-    background-color: red;
-    border: 2px solid white;
+    padding: 0;
+    border: none;
+    background: none;
     cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
     z-index: 2;
-    transition: width 0.3s ease;
 }
 
-.pin::after {
+.pin::before {
     content: "";
     position: absolute;
-    left: 100%;
-    top: 50%;
-    width: 0;
-    height: 35px;
-    background-color: red;
-    transform: translateY(-50%) rotate(45deg);
-    border-radius: 0 20px 20px 0;
-    transition: width 0.3s ease;
+    inset: 0;
+    background: red;
+    border: 2px solid white;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    z-index: 2;            
 }
+
 
 .pin span {
     position: absolute;
-    left: 45px;
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
+    left: 17px;
+    top: 0;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    max-width: 0;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    background: red;
+    border: solid white;
+    border-width: 2px 2px 2px 0;
+    border-radius: 0 18px 18px 0;
     color: white;
     font-size: 13px;
     font-weight: bold;
-    white-space: nowrap;
     opacity: 0;
-    z-index: 5;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    transition: max-width 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
+    z-index: 1;
 }
 
-.pin:hover::after {
-    width: 220px;
+.pin:hover,
+.pin:focus-visible {
+    z-index: 5;            
 }
 
-.pin:hover span {
+.pin:hover span,
+.pin:focus-visible span {
+    max-width: 220px;
+    padding: 0 14px 0 22px;
     opacity: 1;
 }
