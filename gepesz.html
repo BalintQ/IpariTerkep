@@ -31,10 +31,71 @@
 
     <!-- ======== ITT VAN AZ OLDAL SAJÁT TARTALMA ======== -->
     <main>
-        <div class="d-flex justify-content-start vh-100">
-            <img src="./mintaképek/gigaaaa.jpg" alt="mintakép" style="height: 800px; padding-top: 30px;">
-            
+<body class="bg-light">
+
+    <!-- 1. NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Ipari Map</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#folyosoMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="folyosoMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Gépész folyosó</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Vegyész folyosó</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Infós folyosó</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+
+    <!-- 2. FŐ TARTALOM (Térkép + Szélső infók) -->
+    <div class="container my-4">
+      <div class="row g-4 align-items-start">
+        
+        <!-- BAL OLDAL / KÖZÉP: Nagy térképkép (8 oszlop széles) -->
+        <div class="col-12 col-lg-8">
+          <div class="card shadow-sm">
+            <div class="card-body p-2 text-center">
+              <!-- Ide jön a gépész folyosó alaprajza/képe -->
+              <img src="./mintaképek/gigaaaa.jpg" id="terkep-kep" class="img-fluid rounded" alt="Gépész folyosó térkép">
+            </div>
+          </div>
+        </div>
+
+        <!-- JOBB SZÉL: Infó doboz (4 oszlop széles) -->
+        <div class="col-12 col-lg-4">
+          <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white fw-bold">
+              Helyszín információk
+            </div>
+            <div class="card-body">
+              <h5 class="card-title" id="terem-nev">Gépész folyosó</h5>
+              <p class="card-text text-muted" id="terem-leiras">
+                Kattints egy teremre vagy pontra a térképen a részletekért!
+              </p>
+              <hr>
+              <ul class="list-group list-group-flush" id="terem-adatok">
+                <li class="list-group-item px-0"><strong>Szint:</strong> Földszint / 1. emelet</li>
+                <li class="list-group-item px-0"><strong>Termek:</strong> F002 - F024, Tanári</li>
+                <li class="list-group-item px-0"><strong>Megközelítés:</strong> Főbejárattól balra</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS (a mobilos menügombhoz kell) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </main>
 
     <!-- ======== FOOTER (másold változtatás nélkül) ======== -->
