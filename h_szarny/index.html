@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ipari MAP – H szárny</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="alap/ipari_logo.svg" alt="Ipari logó">
+        <h1>Ipari MAP – H szárny</h1>
+    </header>
+    <main>
+        <h2 id="cim"></h2>
+        <div class="kepkeret">
+            <img id="kep" alt="">
+            <div id="pontok"></div>
+        </div>
+        <div class="gombok">
+            <button id="vissza" onclick="visszalep()">Vissza</button>
+            <button onclick="megnyit('start')">Kezdőpont</button>
+        </div>
+        <p id="info"></p>
+        <h3>Helyszínek</h3>
+        <input type="search" id="kereses" placeholder="Keresés..." aria-label="Helyszín keresése" oninput="listaFrissit()">
+        <div id="lista"></div>
+        <p>A további helyszínek később lesznek elérhetők.</p>
+    </main>
+    <footer>Veszprémi SZC Ipari Technikum</footer>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

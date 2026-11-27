@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; color: #222; }
+header { display: flex; align-items: center; gap: 20px; padding: 15px 20px; background: #0f3b46; color: white; }
+header img { width: 85px; max-height: 55px; }
+h1 { font-size: 24px; margin: 0; }
+main { max-width: 1000px; margin: 20px auto; padding: 15px; background: white; }
+h2 { margin-top: 0; font-size: 22px; }
+.kepkeret { position: relative; }
+#kep { display: block; width: 100%; }
+#pontok { position: absolute; inset: 0; }
+button { padding: 8px 12px; border: 1px solid #aaa; background: #eee; color: #222; cursor: pointer; }
+button:hover { background: #ddd; }
+button:disabled { opacity: .5; cursor: default; }
+.pont { position: absolute; transform: translate(-50%, -50%); background: #f2b705; border: 1px solid #444; font-weight: bold; max-width: 40%; }
+.pont:hover { background: #ffe080; }
+.gombok { margin-top: 10px; display: flex; gap: 8px; }
+#kereses { width: 100%; padding: 8px; border: 1px solid #aaa; }
+#lista { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+#lista .aktiv { background: #0f3b46; color: white; }
+footer { padding: 15px; background: #0f3b46; color: white; text-align: center; }
+@media (max-width: 600px) { h1 { font-size: 18px; } .pont { padding: 4px; font-size: 11px; } main { margin: 0; } }
