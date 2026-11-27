@@ -1,31 +1,38 @@
+
 const kepek = [
-            
-        ];
+    
+];
 
-        let aktualisKep = 0;
+let aktualisKep = 0;
 
-        const kepElem = document.getElementById("kep");
+const kepElem = document.getElementById("kep");
 
-        function kepCsere() {
-            kepElem.src = kepek[aktualisKep];
-        }
+function kepCsere() {
+    if (kepek.length === 0) return;
 
-        function vissza() {
-            aktualisKep--;
+    kepElem.src = kepek[aktualisKep];
+}
 
-            if (aktualisKep < 0) {
-                aktualisKep = kepek.length - 1;
-            }
+function vissza() {
+    if (kepek.length === 0) return;
 
-            kepCsere();
-        }
+    aktualisKep--;
 
-        function tovabb() {
-            aktualisKep++;
+    if (aktualisKep < 0) {
+        aktualisKep = kepek.length - 1;
+    }
 
-            if (aktualisKep >= kepek.length) {
-                aktualisKep = 0;
-            }
+    kepCsere();
+}
 
-            kepCsere();
-        }
+function tovabb() {
+    if (kepek.length === 0) return;
+
+    aktualisKep++;
+
+    if (aktualisKep >= kepek.length) {
+        aktualisKep = 0;
+    }
+
+    kepCsere();
+}

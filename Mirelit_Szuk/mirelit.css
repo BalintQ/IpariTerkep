@@ -1,50 +1,89 @@
-body {
-            margin: 0;
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background-color: #f2f2f2;
-            font-family: Arial, sans-serif;
-        }
 
-        .kep-tarto {
-            width: 600px;
-            max-width: 90%;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 25px;
-        }
+main {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        .kep-tarto img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-            border-radius: 10px;
-        }
+.kep-tarto {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 220px);
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .gombok {
-            display: flex;
-            gap: 30px;
-        }
+.kep-tarto img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+}
 
-        button {
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            border: none;
-            background-color: #333;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
+.gombok {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    gap: 12px;
+}
 
-        button:hover {
-            background-color: #666;
-            transform: scale(1.1);
-        }
+.gombok button {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.gombok button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    main {
+        padding: 15px 25px;
+    }
+
+    .kep-tarto {
+        height: calc(100vh - 200px);
+        min-height: 300px;
+    }
+
+    .gombok {
+        right: 12px;
+        bottom: 12px;
+    }
+}
+
+/* Mobil */
+@media (max-width: 480px) {
+    main {
+        padding: 10px;
+    }
+
+    .kep-tarto {
+        height: calc(100vh - 180px);
+        min-height: 250px;
+    }
+
+    .gombok button {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+}
